@@ -21,3 +21,4 @@ export const updateItem = (id, data) => API.put(`/items/${id}`, data);
 export const deleteItem = (id) => API.delete(`/items/${id}`);
 export const getLowStock = () => API.get('/items/low-stock');
 export const getExpiringSoon = () => API.get('/items/expiring-soon');
+export const generateRecipes = (data) => API.post('/items/recipes', data);
